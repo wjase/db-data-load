@@ -1,0 +1,15 @@
+## YAML Template.
+databaseChangeLog:
+  - changeSet:
+        id: 1
+        author: jwraxall
+        changes:
+            - sqlFile:
+                dbms: mysql
+                encoding: utf8
+                path: createdb.sql
+                relativeToChangelogFile: true
+                splitStatements: true
+                stripComments: true
+
+          
